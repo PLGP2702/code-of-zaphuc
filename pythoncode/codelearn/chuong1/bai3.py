@@ -1,2 +1,6 @@
 #print(3273 + 2882)
 print(1234 + 1234)
+print(1+1)
+print(1+2-3)
+print(1/1)
+print(2*2)

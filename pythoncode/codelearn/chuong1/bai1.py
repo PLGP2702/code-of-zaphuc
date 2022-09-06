@@ -2,3 +2,4 @@
 print("Hello World")
 print("Phan Le Gia Phuc")
 print("Hello zaPhuc!!")
+print("Hello Bin")
