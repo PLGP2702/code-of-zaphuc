@@ -1,7 +1,7 @@
 p = int(input())
 a = int(input())
 x = p + a * p
-print() 
+print(x) 
 # -------------------------------------------
 tuoi = 19 
 ten = "Phuc"
