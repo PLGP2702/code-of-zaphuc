@@ -1,0 +1,14 @@
+.container{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.container-item{
+    height: 200px;
+    width: 30%;
+    background-color: yellow;
+    border: 1px solid red;
+    text-align: center;
+    font: 30px;
+}

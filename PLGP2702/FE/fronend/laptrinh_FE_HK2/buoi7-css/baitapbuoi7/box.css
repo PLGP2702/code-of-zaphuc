@@ -1,0 +1,16 @@
+.HCN{
+    width: 600px;
+    height: 300px;
+    background-color: white;
+    }
+.box-circle{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        border-radius: 50%;
+        margin-top: 1cm;
+        margin-left: 5cm;
+    }
+.HCN, .box-circle{
+    position: absolute;
+}

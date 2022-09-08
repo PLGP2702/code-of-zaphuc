@@ -1,0 +1,14 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box {
+    background-color: orange;
+    height: 100px;
+    background-image: url(./img/no_photo.jpg);
+}
+h3 {
+    text-align: center;
+}
+
