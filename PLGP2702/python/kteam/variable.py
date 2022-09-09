@@ -9,4 +9,4 @@ pi = 3.14
 print("tuoi")
 print("ten")
 print("pi")
-type(tuoi)
+
