@@ -12,4 +12,4 @@ if(tong_diem >= 71) and (tong_diem <= 8):loai = "kha"
 if tong_diem > 8: loai ="gioi"
 
 print("Tong diem 3 mon thi = ", tong_diem)
-print("Thi sinh na2y xep loai:", loai)
+print("Thi sinh nay xep loai:", loai)
