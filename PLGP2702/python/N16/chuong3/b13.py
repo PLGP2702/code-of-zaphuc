@@ -1,3 +1,4 @@
+i = 0
 while i != 1:
     try: 
         n = int(input("Nhap so giay: "))
