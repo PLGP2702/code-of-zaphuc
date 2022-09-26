@@ -35,9 +35,15 @@ int main(){
     cin >> kitu;
     cout << kitu << endl;
     */
+    /*
     bool ok = true, oke = false;
     cout << ok << endl;
     cout << oke << endl;
+    */
+    int a;
+    cout << "Nhap gia tri cho a: ";
+    cin >> a;
+    cout << "Gia tri cua a la: " << a << endl; 
     return 0;
 }
 
