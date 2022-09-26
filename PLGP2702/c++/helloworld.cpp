@@ -30,7 +30,14 @@ int main(){
     cin >> a;
     cout << fixed << setprecision(10) << a << endl;
     */
-    
+    /*
+    char kitu;
+    cin >> kitu;
+    cout << kitu << endl;
+    */
+    bool ok = true, oke = false;
+    cout << ok << endl;
+    cout << oke << endl;
     return 0;
 }
 
