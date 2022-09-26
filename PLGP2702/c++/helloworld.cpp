@@ -43,7 +43,7 @@ int main(){
     int a;
     cout << "Nhap gia tri cho a: ";
     cin >> a;
-    cout << "Gia tri cua a la: " << a << endl; 
+    cout << "Gia tri cua a la: " << a << endl;
     return 0;
 }
 
