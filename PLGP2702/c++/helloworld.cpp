@@ -17,11 +17,13 @@ int main(){
     cout << bankinh << endl;
     cout << "xin chao" << endl;
     */
-    int a, b, c;
+    /*
+    long long a, b, c;
     cin >> a >> b >> c;
     cout << "gia tri la: " << a << endl;
     cout << "gia tri la: " << b << endl;
     cout << "gia tri la: " << c << endl;
+    */
     return 0;
 }
 
