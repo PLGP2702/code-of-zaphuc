@@ -18,8 +18,10 @@ int main(){
     cout << "xin chao" << endl;
     */
     int a, b, c;
-    cin >> a;
+    cin >> a >> b >> c;
     cout << "gia tri la: " << a << endl;
+    cout << "gia tri la: " << b << endl;
+    cout << "gia tri la: " << c << endl;
     return 0;
 }
 
