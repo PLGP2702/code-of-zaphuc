@@ -8,9 +8,14 @@
 // }
 using namespace std;
 int main(){ 
-    cout << sizeof(bool) << endl;
+    /*cout << sizeof(bool) << endl;
     cout << INT_MIN << " " << INT_MAX << endl;
     cout << LLONG_MIN << " " << LLONG_MAX << endl;
+    */
+    int bankinh;
+    cout << bankinh << endl;
+    cout << "xin chao" << endl;
+    
     return 0;
 }
 
