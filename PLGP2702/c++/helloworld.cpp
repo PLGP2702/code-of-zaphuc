@@ -12,10 +12,14 @@ int main(){
     cout << INT_MIN << " " << INT_MAX << endl;
     cout << LLONG_MIN << " " << LLONG_MAX << endl;
     */
+    /*
     int bankinh;
     cout << bankinh << endl;
     cout << "xin chao" << endl;
-    
+    */
+    int a, b, c;
+    cin >> a;
+    cout << "gia tri la: " << a << endl;
     return 0;
 }
 
