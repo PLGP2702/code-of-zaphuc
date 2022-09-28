@@ -31,7 +31,7 @@ int main(){
     int tong = a + b;
     int hieu = a - b;
     int tich = a * b;
-    int thuong = a / b;
+    float thuong = (float)a / b;
     int du = a % b;
     cout << tong << " " << hieu << " " << tich << " " << thuong << " " << du << endl;
     return 0;
