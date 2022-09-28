@@ -70,7 +70,7 @@ int main(){
     int res4 = !( a < b );
     int res5 = !( a == e );  
     cout << res << " "<< res1 << " " << res2 << " " << res3 << " " << res4 << " " << res5 << endl;
-    return 0;
+    return 1;
 }
 // assignment operator: toan tu gan 
 // toan tu toan hoc: +, -, *, /, %, ++, --
