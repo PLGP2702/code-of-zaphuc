@@ -36,8 +36,27 @@ int main(){
     int du = a % b;
     cout << tong << " " << hieu << " " << tich << " " << thuong << " " << du << endl;
     */
+    //--------------------- tang truoc ++a 101 101, tang sau a++ 101 100
+    /*
     int a = 100; 
-    int b = a++;
-    cout << a << " " << b << endl; 
+    int b = a--;
+    cout << a << " " << b << endl;
+    */
+    /*
+    int a = 100, b = 200;
+    //a += b 
+    a = a + b;
+    //a -= b
+    a = a - b;
+    //a *= b 
+    a = a * b;
+    //a /= b  
+    a = a / b;
+    // a %= b
+    a = a % b;
+    */
     return 0;
 }
+// assignment operator: toan tu gan 
+// toan tu toan hoc: +, -, *, /, %, ++, --
+//toan tu so sanh: >, <, >=, <=, ==, !=
