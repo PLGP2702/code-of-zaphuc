@@ -55,8 +55,14 @@ int main(){
     // a %= b
     a = a % b;
     */
+    //---------------------------------toan tu so sanh
+    // toan_hang1 toantusosanh toan_hang2 => true, false
+    int a = 100, b = 200;
+    bool ok = a != b;
+    cout << ok << endl;
     return 0;
 }
 // assignment operator: toan tu gan 
 // toan tu toan hoc: +, -, *, /, %, ++, --
 //toan tu so sanh: >, <, >=, <=, ==, !=
+//logical: AND , OR , NOT
