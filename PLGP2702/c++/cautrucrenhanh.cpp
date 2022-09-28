@@ -8,6 +8,9 @@ using namespace std;
 //sqrt(n) : tin can bac hai cua n : tra ve so double 
 // round(a) : lam tron so
 //100 > 50 : tue =>
+
+// 0 : false
+// #0 : true
 int main(){
     /*
     int n = 200;
@@ -15,7 +18,13 @@ int main(){
         cout << "so chan! \n";
     }
     */
-    
+    int n; //0 la sai
+    cin >> n;
+    if((n % 2) == 0) {
+        cout << "n la so chan !\n";      
+    } else {
+        cout << "la so le !\n";
+    }
     return 0;  
 }
 
