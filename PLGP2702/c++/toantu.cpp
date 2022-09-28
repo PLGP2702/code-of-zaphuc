@@ -63,12 +63,13 @@ int main(){
     cout << ok << endl;
     */
     int a = 100, b = 200, c = 300, d = 400, e = 200;
-    int res = ( a <= b ) && ( c <= d );
-    int res1 = ( a >= b ) && ( c <= d );
-    int res2 = (a == b ) || ( c > d );
-    int res3 = ( a < b ) || ( c <= d ) || ( b > c ) || ( a > e );
-    int res4 = !( a < b );
-    int res5 = !( a == e );  
+    int res = (a <= b) && (c <= d);
+    int res1 = (a >= b) && (c <= d);
+    int res2 = (a == b) || (c > d);
+    int res3 = ( a < b) || (c <= d) || (b > c) || (a > e);
+    int res4 = !(a < b);
+    int res5 = !(a == e);
+    int res6 = (a > b) && (a > e) || (a <= e);
     cout << res << " "<< res1 << " " << res2 << " " << res3 << " " << res4 << " " << res5 << endl;
     return 0;
 }
