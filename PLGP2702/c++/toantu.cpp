@@ -70,7 +70,7 @@ int main(){
     int res4 = !(a < b);
     int res5 = !(a == e);
     int res6 = (a > b) && (a > e) || (a <= e);
-    cout << res << " "<< res1 << " " << res2 << " " << res3 << " " << res4 << " " << res5 << " " << res6 endl;
+    cout << res << " "<< res1 << " " << res2 << " " << res3 << " " << res4 << " " << res5 << " " << res6 << endl;
     return 0;
 }
 // assignment operator: toan tu gan 
