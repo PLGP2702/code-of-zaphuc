@@ -26,7 +26,8 @@ int main(){
     c = b;
     cout << c << endl;
     */
-    //--------------------------------- phep' toan
+    //--------------------------------- toan tu 
+    /*
     int a = 500, b = 200; 
     int tong = a + b;
     int hieu = a - b;
@@ -34,5 +35,9 @@ int main(){
     float thuong = (float)a / b;
     int du = a % b;
     cout << tong << " " << hieu << " " << tich << " " << thuong << " " << du << endl;
+    */
+    int a = 100; 
+    int b = a++;
+    cout << a << " " << b << endl; 
     return 0;
 }
