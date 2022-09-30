@@ -5,7 +5,7 @@
 using namespace std;
 
 int main(){
-    /*//tính tổng hiệu tích thương-----------------------------
+    /* //tính tổng hiệu tích thương-----------------------------
     int a, b;
     cin >> a >> b;
     int tong = a + b;
@@ -34,7 +34,7 @@ int main(){
     double F = (float)c * 9 / 5 + 32;
     cout << fixed << setprecision(2)<< F << endl;
     */
-    /*------------------------------------------------
+    /* //abs, sqrt, pow------------------------------------------------
     // tri tuyet doi 
     int d; cin >> d;
     double ttd = abs(d);
@@ -54,10 +54,24 @@ int main(){
     cin >> n; 
     long long s = 1ll * n * (n+1) / 2;
     cout << s << endl;
-    */ // tính tổng 2---------------------------------
+    */ 
+    /* // tính tổng 2---------------------------------
     int n;
     cin >> n;
     long long res = 1ll * n *(n+1) * (2*n+1) / 6;
     cout << res << endl;
+    */
+    /* //tính tổng 3----------------------------------
+    int n; cin >> n;
+    double res = 1 - 1.0 / (n+1);
+    cout << fixed << setprecision(2) << res << endl;
+    */
+    /* //tính tổng 4----------------------------------
+    int n; 
+    cin >> n;
+    long long res = 1ll * n * (n+1);
+    cout << res << endl;
+    */
+    
     return 0;
 }
