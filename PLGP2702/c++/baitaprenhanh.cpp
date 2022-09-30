@@ -74,11 +74,11 @@ int main(){
     */
     //tính tổng 5----------------------------------
     long long n; cin >> n;
-    if(n & 2 == 0){
+    if(n % 2 == 0){
         cout << n / 2 << endl;
     }
     else{
-        cout << (-n -1 ) / 2 << endl;
+        cout << (-n - 1) / 2 << endl;
     }
     // else{
     //     cout << " du lieu khong hop le rui !" endl;
