@@ -37,7 +37,7 @@ int main(){
     // tri tuyet doi 
     int d; cin >> d;
     double ttd = abs(d);
-    cout << fixed << setprecision(2) << endl;
+    cout << fixed << setprecision(2) << ttd << endl;
     // can bac hai
     int n; cin >> n;
     double can = sqrt(n);
