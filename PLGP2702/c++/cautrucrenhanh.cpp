@@ -12,13 +12,11 @@ using namespace std;
 // 0 : false
 // #0 : true
 int main(){
-/*
     int n = 200;
     if((n >= 100) && (n <= 500)){
         cout << "so chan! \n";
     }
-*/
-/*
+/* //so chan so le
     int n; //0 la sai
     cin >> n;
     if((n % 2) == 0) {
@@ -27,7 +25,7 @@ int main(){
         cout << "la so le !\n";
     }
 */
-/*
+/* //day
     int n;
     cin >> n;
     if(n == 1){
@@ -55,7 +53,7 @@ int main(){
         cout << "du lieu khong hop le!";
     }
 */
-/* 
+/* //month
     int n; 
     cin >> n;
     if((n == 1) || (n == 3) || (n == 5) || (n == 7) || (n == 8) || (n == 10) || (n == 12)){
@@ -71,7 +69,7 @@ int main(){
         cout << "du lieu khong hop le!!";
     }
 */
-/*
+/* //day
     int n;
     cin >> n;
     switch (n) {
@@ -100,6 +98,7 @@ int main(){
             cout <<"du lieu khong hop le!!!";
         }
 */
+/* //switch case
     int n; cin >> n;
     switch (n)
     {
@@ -114,7 +113,8 @@ int main(){
         break;
     default:
         printf("du lieu khong hop le!");
-    }        
+    }
+*/        
     return 0;  
 }
 
