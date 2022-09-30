@@ -7,7 +7,7 @@ using namespace std;
 //pow(a,b) : tinh a ^ b : tra ve so double
 //sqrt(n) : tin can bac hai cua n : tra ve so double 
 // round(a) : lam tron so
-//100 > 50 : tue =>
+//100 > 50 : true =>
 
 // 0 : false
 // #0 : true
