@@ -34,7 +34,7 @@ int main(){
     double F = (float)c * 9 / 5 + 32;
     cout << fixed << setprecision(2)<< F << endl;
     */
-    /*
+    /*------------------------------------------------
     // tri tuyet doi 
     int d; cin >> d;
     double ttd = abs(d);
@@ -49,15 +49,15 @@ int main(){
     double somu = pow(a,b);
     cout << fixed << setprecision(2) << somu << endl;
     */
-    /* //tinh tổng 1
+    /* //tinh tổng 1---------------------------------
     int n;
     cin >> n; 
     long long s = 1ll * n * (n+1) / 2;
     cout << s << endl;
-    */
+    */ // tính tổng 2---------------------------------
     int n;
     cin >> n;
-    long long res = (n *(n+1) * (2*n+1)) / 6;
+    long long res = 1ll * n *(n+1) * (2*n+1) / 6;
     cout << res << endl;
     return 0;
 }
