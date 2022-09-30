@@ -49,13 +49,13 @@ int main(){
     double somu = pow(a,b);
     cout << fixed << setprecision(2) << somu << endl;
     */
-    /* //tinh tổng 1---------------------------------
+    /* //tính tổng 1----------------------------------
     int n;
     cin >> n; 
     long long s = 1ll * n * (n+1) / 2;
     cout << s << endl;
     */ 
-    /* // tính tổng 2---------------------------------
+    /* //tính tổng 2---------------------------------
     int n;
     cin >> n;
     long long res = 1ll * n *(n+1) * (2*n+1) / 6;
@@ -72,6 +72,16 @@ int main(){
     long long res = 1ll * n * (n+1);
     cout << res << endl;
     */
-    
+    //tính tổng 5----------------------------------
+    long long n; cin >> n;
+    if(n & 2 == 0){
+        cout << n / 2 << endl;
+    }
+    else{
+        cout << (-n -1 ) / 2 << endl;
+    }
+    // else{
+    //     cout << " du lieu khong hop le rui !" endl;
+    // }
     return 0;
 }
