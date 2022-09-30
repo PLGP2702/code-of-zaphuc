@@ -12,10 +12,10 @@ using namespace std;
 // 0 : false
 // #0 : true
 int main(){
-    int n = 200;
-    if((n >= 100) && (n <= 500)){
-        cout << "so chan! \n";
-    }
+    // int n = 200;
+    // if((n >= 100) && (n <= 500)){
+    //     cout << "so chan! \n";
+    // }
 /* //so chan so le
     int n; //0 la sai
     cin >> n;
