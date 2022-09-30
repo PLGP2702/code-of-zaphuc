@@ -72,7 +72,7 @@ int main(){
     long long res = 1ll * n * (n+1);
     cout << res << endl;
     */
-    //tính tổng 5----------------------------------
+    /* //tính tổng 5----------------------------------
     long long n; cin >> n;
     if(n % 2 == 0){
         cout << n / 2 << endl;
@@ -80,8 +80,6 @@ int main(){
     else{
         cout << (-n - 1) / 2 << endl;
     }
-    // else{
-    //     cout << " du lieu khong hop le rui !" endl;
-    // }
+    */
     return 0;
 }
