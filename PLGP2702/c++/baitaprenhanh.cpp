@@ -81,11 +81,14 @@ int main(){
         cout << (-n - 1) / 2 << endl;
     }
     */
-    /* // so chia het lon nhat----------------------------
+    /* //so chia het lon nhat----------------------------
     int a ,b;
     cin >> a >> b;
     cout << a / b * b << endl;
     */
-       //
+       //so chia het nho nhat-----------------------------
+    int a, b;
+    cin >> a >> b;
+    cout << (a + b - 1) / b * b<< endl;
     return 0;
 }
