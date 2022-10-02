@@ -74,12 +74,18 @@ int main(){
     */
     /* //tính tổng 5----------------------------------
     long long n; cin >> n;
-    if(n % 2 == 0){
+    if(n % 2 == 0){                                                                                
         cout << n / 2 << endl;
     }
     else{
         cout << (-n - 1) / 2 << endl;
     }
     */
+    /* // so chia het lon nhat----------------------------
+    int a ,b;
+    cin >> a >> b;
+    cout << a / b * b << endl;
+    */
+       //
     return 0;
 }
