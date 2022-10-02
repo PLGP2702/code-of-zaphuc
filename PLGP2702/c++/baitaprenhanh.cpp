@@ -91,7 +91,7 @@ int main(){
     cin >> a >> b;
     cout << (a + b - 1) / b * b<< endl;
     */
-    /* //kiem tra tinh chan le
+    /* //kiem tra tinh chan le----------------------------
     long long n;
     cin >> n;
     if(n % 2 == 0){
@@ -101,14 +101,49 @@ int main(){
         cout << 1 << endl;
     }
     */
-    //kiem tra so chia het cho 3 va 5---------------------
+    /* //kiem tra so chia het cho 3 va 5---------------------
     long long n;
     cin >> n;
-    if((n % 3 == 0) && (n % 5 == 0)){
+    if((n % 3 == 0) || (n % 5 == 0)){ // de y ||(hoac), &&(va)
         cout << 1 << endl;
     }
     else{
         cout << 0 << endl;
+    }
+    */
+    /* //kiem tra nam nhuan--------------------------------
+    int n;
+    cin >> n;
+    if(n <= 0){
+        cout << " INVALID\n";
+    }
+    else{
+        if((n % 400 == 0) || ((n % 4 == 0) && (n % 100 != 0))){
+            cout << "Yes\n";
+        }
+        else cout << "NO\n";
+    }
+    */
+    int t, n; 
+    cin >> t >> n;
+    if(t <= 0 || t > 12 || n <= 0){
+        cout << "INVALID\n";
+    }
+    else{
+        if(t == 1 || t == 3 || t == 5 || t == 7 || t == 8 || t == 10 || t == 12 ){
+            cout << "  thang co 31 ngay\n";
+        }
+        else if(t == 4 || t == 6 || t == 9 || t == 11){
+            cout <<"   thang co 30 ngay\n";
+        }
+        else{
+            if((n % 400 == 0) || ((n % 4 == 0) && (n % 100 != 0))){
+                cout <<"29";
+            }
+            else{
+                cout <<"28";
+            }
+        }
     }
     return 0;
 }
