@@ -124,6 +124,7 @@ int main(){
         else cout << "NO\n";
     }
     */
+    /* //in ra so ngay cua thang----------------------------
     int t, n; 
     cin >> t >> n;
     if(t <= 0 || t > 12 || n <= 0){
@@ -145,5 +146,20 @@ int main(){
             }
         }
     }
+    */
+    /* //kiem tra chu in hoa,thuong-------------------------------
+    // a - z : 97 - 122
+    // A - Z : 65 - 90
+    // 0 - 9 : 48 - 57
+    char c; cin >> c;
+    cout << (int)c << endl;
+    if(c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z'){
+        cout << "yes";
+    }
+    else{
+        cout << "no";
+    }
+    */
+   
     return 0;
 }
