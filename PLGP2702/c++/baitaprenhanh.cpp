@@ -160,6 +160,16 @@ int main(){
         cout << "no";
     }
     */
-   
+    /* //kiem tra chu so-------------------------------------------
+    char c; cin >> c;
+    cout << (int)c << endl;
+    if(c >= '0' && c <= 9){
+        cout << "yes";
+    }
+    else{
+        cout << "no";
+    }
+    */
+    
     return 0;
 }
