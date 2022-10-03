@@ -196,7 +196,7 @@ int main(){
         cout << "INVALID\n";
     }
     */
-    //số lớn số nhỏ
+    /* //số lớn số nhỏ----------------------------------------------                                                                                             
     int a, b, c;
     cin >> a >> b >> c;
     // int max, min;
@@ -222,5 +222,6 @@ int main(){
     if(b > max) max = b;
     if(c > max) max = c;
     cout << max <<" "<< min << endl;
+    */
     return 0;
 }
