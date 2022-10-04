@@ -177,7 +177,7 @@ int main(){
     }
     cout << c << endl;
     */
-    /* //chữ cái kế tiếp--------------------------------------------
+     //chữ cái kế tiếp--------------------------------------------
     char c; 
     cin >> c;
     if((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')){
@@ -195,7 +195,7 @@ int main(){
     else{
         cout << "INVALID\n";
     }
-    */
+    
     /* //số lớn số nhỏ----------------------------------------------                                                                                             
     int a, b, c;
     cin >> a >> b >> c;
@@ -215,7 +215,7 @@ int main(){
     // }
     // else
     //     min = c;
-    // cout << max << " " << min << endl;
+    /* // cout << max << " " << min << endl;
     int min = a, max = a; 
     if(b < min) min = b;
     if(c < min) min = c;
