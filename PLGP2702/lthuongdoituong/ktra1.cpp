@@ -14,8 +14,8 @@ using namespace std;
     }
     Complex(float a, float b)
     {
-        thuc=a;
-        ao=b;
+        thuc = a;
+        ao = b;
     }
     
         void nhap() {
@@ -24,7 +24,7 @@ using namespace std;
         };
     
         void xuat() {
-            if(ao >0) 
+            if(ao > 0) 
                 cout << thuc << "+i" << ao;
             else if(ao == 1)
                 cout << thuc << "+i";
