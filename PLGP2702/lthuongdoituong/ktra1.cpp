@@ -1,6 +1,7 @@
-    #include <bits/stdc++.h>
+#include <iostream>
+#include <bits/stdc++.h>
     
-    using namespace std;
+using namespace std;
      
     class Sophuc{
     private:
@@ -51,10 +52,10 @@
             ao = a.thuc * b.ao + a.ao * b.thuc;
         };
     
-        void chia(Sophuc a, Sophuc b) {
-            thuc = (a.thuc * b.thuc + a.ao * b.ao) / (b.ao * b.ao + b.thuc * b.thuc);
-            ao = (a.ao * b.thuc - a.thuc * b.ao) / (b.thuc * b.thuc + b.ao * b.ao);
-        };
+        // void chia(Sophuc a, Sophuc b) {
+        //     thuc = (a.thuc * b.thuc + a.ao * b.ao) / (b.ao * b.ao + b.thuc * b.thuc);
+        //     ao = (a.ao * b.thuc - a.thuc * b.ao) / (b.thuc * b.thuc + b.ao * b.ao);
+        // };
     };
     
     int main()
@@ -68,8 +69,8 @@
         cout << "\nHieu cua 2 so phuc: "; c.xuat();
         c.nhan(a,b);
         cout << "\nTich cua 2 so phuc: "; c.xuat();
-        c.chia(a,b);
-        cout << "\nThuong cua 2 so phuc: "; c.xuat();
+        // c.chia(a,b);
+        // cout << "\nThuong cua 2 so phuc: "; c.xuat();
         return 0;
     }
     
