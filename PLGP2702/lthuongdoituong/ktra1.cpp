@@ -36,16 +36,16 @@ using namespace std;
             else
                 cout << thuc << ao << "i";
         };
-        setthuc(float a){
+        void setthuc(float a){
             thuc = a;
         }
-        getthuc(){
+        float getthuc(){
             return thuc;
         }
-        setao(float b){
+        void setao(float b){
             ao = b;
         }
-        getao(){
+        float getao(){
             return ao;
         }
         void cong(Complex a, Complex b) {
