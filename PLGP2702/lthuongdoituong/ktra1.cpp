@@ -8,10 +8,14 @@
     public:
     complex()
     {
-        this-> a=0;
-        this-> b=0;
+        thuc=0;
+        ao=0;
     }
-    Complex(float thuc, float ao)
+    Complex(float a, float b)
+    {
+        thuc=a;
+        ao=b;
+    }
     
         void nhap() {
             cout << "Nhap phan thuc: "; cin >> thuc;
@@ -19,12 +23,15 @@
         };
     
         void xuat() {
-            if(ao >= 0) 
-                cout << thuc << "+" << ao << "i";
+            if(ao >0) 
+                cout << thuc << "+i" << ao;
             else if(ao == 1)
-                cout << thuc << "+" << "i";
+                cout << thuc << "+i";
             else if(ao == -1)
-                cout << thuc << "-" << "i";
+                cout << thuc << "-i";
+            else if(ao == 0){
+                cout << thuc;
+            }
             else
                 cout << thuc << ao << "i";
         };
