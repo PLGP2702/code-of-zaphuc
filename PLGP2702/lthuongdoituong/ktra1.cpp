@@ -3,11 +3,11 @@
     
 using namespace std;
      
-    class Sophuc{
+    class Complex{
     private:
         float thuc, ao;
     public:
-    complex()
+    Complex()
     {
         thuc=0;
         ao=0;
@@ -37,17 +37,17 @@ using namespace std;
                 cout << thuc << ao << "i";
         };
     
-        void cong(Sophuc a, Sophuc b) {
+        void cong(Complex a, Complex b) {
             thuc = a.thuc + b.thuc;
             ao = a.ao + b.ao;
         };
     
-        void tru(Sophuc a, Sophuc b) {
+        void tru(Complex a, Complex b) {
             thuc = a.thuc - b.thuc;
             ao = a.ao - b.ao;   
         };
     
-        void nhan(Sophuc a, Sophuc b) {
+        void nhan(Complex a, Complex b) {
             thuc = a.thuc * b.thuc - a.ao * b.ao;
             ao = a.thuc * b.ao + a.ao * b.thuc;
         };
@@ -60,7 +60,7 @@ using namespace std;
     
     int main()
     {
-        Sophuc a,b,c;
+        Complex a,b,c;
         a.nhap();
         b.nhap();
         c.cong(a,b);
