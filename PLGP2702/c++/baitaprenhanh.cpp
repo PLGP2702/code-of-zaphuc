@@ -262,6 +262,40 @@ int main(){
     else
         cout <<"INVALID";
     */
-   
+    /* //chuyển đổi ngày thành ngày, tháng, năm
+    int n;
+    cout << "Nhap n: ";
+    cin >> n;
+    int nam = n /365;
+    int du = n % 365;
+    int tuan = du / 7;
+    int ngay = du % 7;
+    cout << "Nam: " << nam << endl;
+    cout << "Tuan: "<< tuan << endl;
+    cout << "Thang: "<< ngay << endl;
+    */
+    int a, b, c;
+    cin >> a >> b >> c;
+    if(a == 0){
+        if(b == 0 && c == 0){
+            cout <<"INF";
+        }
+        else if(b != 0){
+            cout << fixed << Setprecision(2) << (float)- c / b;
+        }
+    }
+    else{
+        int delta = b * b - 4 * a * c;
+        if(delta < 0)
+            cout <<"No\n";
+    }
+    else if(delta == 0){
+        cout << fixed << setprecision(2) << (float)-b/(2 * a);
+    }
+    else{
+        float x1 = (-b + sqrt(delta)) / (2 * a);
+        float x2 = (-b - sqrt(delta)) / (2 * a);
+        cout << fixde << setprecision(2) << x1 << " " << x2 << endl;
+    }
     return 0;
 }
