@@ -1,6 +1,7 @@
 #include <iostream>
 #include <math.h>
 #include <iomanip>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -223,6 +224,19 @@ int main(){
     if(c > max) max = c;
     cout << max <<" "<< min << endl;
     */
+    /* //tam giac hop le----------------------------------------------
+    int a, b ,c;
+    cin >> a;
+    cin >> b;
+    cin >> c;
+    if(a > 0 && b > 0 && c > 0 && a + b > c && a + c > b && c + b > a){
+        cout <<"Yes\n" << endl;
+    }
+    else{
+        cout <<"No\n" << endl;
+    }
+    */
+    /* //kiem tra tam giac do la tam giac gi------------------------
     int a, b, c;
     cin >> a >> b >> c;
     if(a > 0 && b > 0 && c > 0 && a + b > c && a + c > b && b + c > a){
@@ -247,5 +261,7 @@ int main(){
     }
     else
         cout <<"INVALID";
+    */
+   
     return 0;
 }
