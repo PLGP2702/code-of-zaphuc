@@ -20,13 +20,16 @@ int main()
     //     continue;
     //     cout <<"Zaphuc2702\n";
     // }
+    /* //nhập vào giá trị nguyên dương ,tính tổng sau và in ra kết quả màn hình. 
     int n;
-    cout << "Nhap gia tri cua n: ";
-    cin >> n;
-    int sum = 0;
+    cout << "Nhap gia tri cua n: "; cin >> n;
+    int s = 0;
     for(int i = 1; i <= n; i++){
-        S += i;
+        s += i;
     }
-    cout << S << endl;
+    cout << s << endl;
+    */
+     //nhập vào giá trị nguyên dương ,tính tổng sau và in ra kết quả màn hình.
+    
     return 0;
 }
