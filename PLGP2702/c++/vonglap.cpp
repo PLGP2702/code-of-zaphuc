@@ -15,9 +15,10 @@ int main()
     //         break;
     // }
     int n = 100;
-    for(int i = n; i <= 100; i++){
+    for(int i = 1; i <= 100; i++){
         cout <<"HI !\n";
-        // continue;
+        continue;
+        cout <<"Zaphuc2702\n";
     }
     return 0;
 }
