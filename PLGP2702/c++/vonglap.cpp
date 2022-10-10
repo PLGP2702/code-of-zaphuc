@@ -15,10 +15,9 @@ int main()
     //         break;
     // }
     int n = 100;
-    for(int i = n; i <= 10; i++){
+    for(int i = n; i <= 100; i++){
         cout <<"HI !\n";
         // continue;
-        cout <<"Zaphuc\n";
     }
     return 0;
 }
