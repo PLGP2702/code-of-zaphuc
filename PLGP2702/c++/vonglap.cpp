@@ -45,6 +45,6 @@ int main()
         if(i % 3 == 0)
             s += i;
     }
-    cout << s << endl;
+    cout << s << endl; 
     return 0;
 }
