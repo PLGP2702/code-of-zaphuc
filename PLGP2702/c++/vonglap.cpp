@@ -4,10 +4,11 @@ using namespace std;
 //break
 //continue
 int main()
-{
-    // for (int i = 1; i <= 5; i++){
-    //     cout << "Hello !\n";
-    // }
+{   
+    for (int  i = 1; i <= 10; i++)
+    {
+        cout << "2im_zaphuc!\n";
+    }
     // int n = 100;
     // for(int i = n; i >= 1; i--){
     //     cout << i << endl;
@@ -38,6 +39,7 @@ int main()
     }
     cout << s << endl;
     */
+    /*
     int n;
     cout << "Nhap gia tri cua n: "; cin >> n;
     int s = 0;
@@ -46,5 +48,6 @@ int main()
             s += i;
     }
     cout << s << endl; 
+    */
     return 0;
 }
