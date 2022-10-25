@@ -1,0 +1,5 @@
+n = int(input("Nhap n:"))
+A = list(range(1,n,2))
+B = list(range(2,n,2))
+print(A)
+print(B)
