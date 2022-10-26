@@ -9,15 +9,26 @@ int main()
     // {
     //     cout << "Hello my love <3\n";
     // }
-    for(int i = 1; i <= 10; i++)
-    {
-        
-    }
+    // int i; 
     // int n = 100;
-    // for(int i = 1; i <= 100; i++){
-    //     cout <<"HI !\n";
+    // for(i = n; i >= 1; i--){
+    //     cout << i << endl;
+    // }
+    // int n = 100;
+    // for(int i = 1; i <= 100; i++)
+    // {
+    //     cout << i << endl;
+    //     if(i == 40)
+    //     {
+    //         break;
+    //     }
+    // }
+    // int n = 100;
+    // for(int i = 1; i <= 10; i++)
+    // {
+    //     cout << "Xin chao <3!\n";
     //     continue;
-    //     cout <<"Zaphuc2702\n";
+    //     cout << "Zaphuc2702";
     // }
     /* //nhập vào giá trị nguyên dương ,tính tổng sau và in ra kết quả màn hình. 
     int n;
