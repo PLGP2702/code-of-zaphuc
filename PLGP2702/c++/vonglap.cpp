@@ -5,16 +5,14 @@ using namespace std;
 //continue
 int main()
 {   
-    for (int  i = 1; i <= 10; i++)
-    {
-        cout << "2im_zaphuc!\n";
-    }
-    // int n = 100;
-    // for(int i = n; i >= 1; i--){
-    //     cout << i << endl;
-    //     if(i == 40)
-    //         break;
+    // for(int i = 1; i <= 10; i++)
+    // {
+    //     cout << "Hello my love <3\n";
     // }
+    for(int i = 1; i <= 10; i++)
+    {
+        
+    }
     // int n = 100;
     // for(int i = 1; i <= 100; i++){
     //     cout <<"HI !\n";
