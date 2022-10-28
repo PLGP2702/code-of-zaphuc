@@ -51,17 +51,34 @@ int main()
         s += i * i;
     }
     cout << s << endl;
-    */
-    
+    */ 
+    /*
     int n;
-    cout << "Nhap gia tri cua n: "; 
+    cout << "Nhap gia tri n: ";
     cin >> n;
     int s = 0;
-    for(int i = 1; i <= n; i++){
-        if(i % 3 == 0)
-            s += i;
+    for(int i = 0; i <= n; i+=3)
+    {
+        s+=i;
     }
-    cout << s << endl; 
-    
+    cout << s << endl;
+    */
+    /* while------------------------------------
+    int i = 0;
+    while (i < 27)
+    {
+        cout << i << endl;
+        ++i;
+    }
+    cout << "Gia tri cua i sau khi ket thuc: " << i << endl;
+    */
+    int i = 0;
+    while(i < 10)
+    {
+        cout << "Xin chao!\n";
+        continue;
+        cout << "hello !\n";
+        ++i;
+    }
     return 0;
 }
