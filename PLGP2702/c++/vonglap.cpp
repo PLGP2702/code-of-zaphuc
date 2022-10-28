@@ -72,13 +72,12 @@ int main()
     }
     cout << "Gia tri cua i sau khi ket thuc: " << i << endl;
     */
-    int i = 0;
-    while(i < 10)
+    int n; cin >> n;
+    int cnt = 0;
+    while (n != n)
     {
-        cout << "Xin chao!\n";
-        continue;
-        cout << "hello !\n";
-        ++i;
-    }
+        ++cnt;
+        n/10;
+    }   
     return 0;
 }
