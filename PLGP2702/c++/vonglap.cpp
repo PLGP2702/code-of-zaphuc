@@ -63,7 +63,7 @@ int main()
     }
     cout << s << endl;
     */
-    /* while------------------------------------
+    /* while--------------------------------------------------------------------
     int i = 0;
     while (i < 27)
     {
@@ -72,12 +72,31 @@ int main()
     }
     cout << "Gia tri cua i sau khi ket thuc: " << i << endl;
     */
-    int n; cin >> n;
-    int cnt = 0;
-    while (n != n)
+    // int n;
+    // cin >> n;
+    // int sum = 0;
+    // while (n != 0)
+    // {
+    //     /* code */
+    //     sum += n % 10;
+    //     n /= 10;
+    // }
+    // cout << sum << endl;
+    //do while-------------------------------------------------------------------
+    // int n = 0;
+    // do
+    // {
+    //     /* code */
+    //     cout << n << endl;
+    //     ++n;
+    // } while (n <= 4);
+    int n = 0;
+    do
     {
-        ++cnt;
-        n/10;
-    }   
+        /* code */
+        cout << n << endl;
+        ++n;
+    } while (n <= 16);
+    
     return 0;
 }
