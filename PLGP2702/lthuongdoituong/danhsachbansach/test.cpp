@@ -7,6 +7,7 @@ class Media{
         string tengoi;
         int giaban;
     public:
+        //khởi tạo
         Media(){
             this->tengoi="";
             this->giaban=0;        
