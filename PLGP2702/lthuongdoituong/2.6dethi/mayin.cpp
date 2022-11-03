@@ -5,7 +5,7 @@ class Printer
 {
     private:
     string Name;
-    int Name;
+    int Soluong;
     public:
     Printer()
     {
@@ -19,8 +19,8 @@ class Printer
     }
     void xuatkho()
     {
-        cout << "\nTen: " << this->Name
-        cout << "\nSoluong: " << this->soluong;
+        cout << "\nTen: " << this->Name;
+        cout << "\nSoluong: " << this->Soluong;
     }
 };
 
@@ -36,7 +36,7 @@ class Laser : public Printer{
     void xuatkho()
     {
         Printer::xuatkho();
-        cout << "\nDpi: " << this->Dpi
+        cout << "\nDpi: " << this->Dpi;
     }
 };
 
@@ -47,16 +47,16 @@ class ColorPrinter : Printer{
     void nhapkho()
     {
         Printer::nhapkho();
-        cout << "\nNhap mau: "; string(stdin); getline(cin, this->color)
+        cout << "\nNhap mau: "; fflush(stdin); getline(cin, this->color);
     }
     void xuatkho()
     {
         Printer::xuatkho();
-        cout "\nMau: " << this->color;
+        cout << "\nMau: " << this->color;
     }
 };
 
-class Colorlaser : public laser , ColorPrinter
+class Colorlaser : public Laser , ColorPrinter
 {
     private:
 
@@ -68,7 +68,7 @@ class Colorlaser : public laser , ColorPrinter
     }
     void xuatkho()
     {
-        Lazer::xuatkho();
+        Laser::xuatkho();
         ColorPrinter::xuatkho();
     }
 };
