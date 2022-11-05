@@ -24,7 +24,8 @@ class Printer
     }
 };
 
-class Laser : public Printer{
+class Laser : public Printer
+{
     private:
     int Dpi;
     public:
@@ -40,7 +41,8 @@ class Laser : public Printer{
     }
 };
 
-class ColorPrinter : Printer{
+class ColorPrinter : Printer
+{
     private:
         string color;
     public:
@@ -73,9 +75,36 @@ class Colorlaser : public Laser , ColorPrinter
     }
 };
 
-int main()
+void xuat_ds_mayin(Colorlaser ds_mayin[], int n)
 {
+    int dem = 1;
+    for (int i = 0; i < n, i++)
+    {
+        /* code */
+        cout << "\nThong tin may in thu: " << dem++;
+        ds_mayin[i].xuatkho();
+    }
+    
+}
 
+void menu(Colorlaser ds_mayin[], int n)
+{
+    int luachon;
+    while (true)
+    {
+        /* code */
+        system("cls");
+        cout << "\n\n\t\t===============QUAN LY MUC BAN SACH===============";
+        cout << "\n\t1. Nhap danh sach may in: ";
+        cout << "\n\t2. Xuat danh sach may in: ";
+        cout << "\n\t3. Thoat."
+    }
+    
+}
+
+int main()
+{   
+    
 }
 
 
