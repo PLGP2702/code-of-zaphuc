@@ -3,7 +3,7 @@ using namespace std;
 
 class Printer
 {
-    private:
+    protected:
     string Name;
     int Soluong;
     public:
@@ -14,8 +14,8 @@ class Printer
     }
     void nhapkho()
     {
-        cout << "Nhap ten: "; fflush(stdin); getline(cin, this->Name);
-        cout << "Nhap so luong: "; cin >> this->Name;
+        cout << "\nNhap ten: "; fflush(stdin); getline(cin, this->Name);
+        cout << "\nNhap so luong: "; cin >> this->Soluong;
     }
     void xuatkho()
     {
@@ -41,24 +41,22 @@ class Laser : public Printer
     }
 };
 
-class ColorPrinter : Printer
+class ColorPrinter : public Printer
 {
     private:
         string color;
     public:
     void nhapkho()
     {
-        Printer::nhapkho();
         cout << "\nNhap mau: "; fflush(stdin); getline(cin, this->color);
     }
     void xuatkho()
     {
-        Printer::xuatkho();
         cout << "\nMau: " << this->color;
     }
 };
 
-class Colorlaser : public Laser , ColorPrinter
+class Colorlaser : public Laser , public ColorPrinter
 {
     private:
 
@@ -78,7 +76,7 @@ class Colorlaser : public Laser , ColorPrinter
 void xuat_ds_mayin(Colorlaser ds_mayin[], int n)
 {
     int dem = 1;
-    for (int i = 0; i < n, i++)
+    for (int i = 0; i < n; i++)
     {
         /* code */
         cout << "\nThong tin may in thu: " << dem++;
@@ -95,16 +93,38 @@ void menu(Colorlaser ds_mayin[], int n)
         /* code */
         system("cls");
         cout << "\n\n\t\t===============QUAN LY MUC BAN SACH===============";
-        cout << "\n\t1. Nhap danh sach may in: ";
-        cout << "\n\t2. Xuat danh sach may in: ";
-        cout << "\n\t3. Thoat."
+        cout << "\n\t1. Nhap danh sach may in";
+        cout << "\n\t2. Xuat danh sach may in";
+        cout << "\n\t3. Thoat.";
+        cout<<"\n\t\t=======================END========================";
+
+        cout << "\nNhap lua chon: "; cin >> luachon;
+        if(luachon == 1)
+        {
+            Colorlaser x;
+            x.nhapkho();
+            ds_mayin[n] = x;
+            n++;
+            system("pause");
+        }
+        else if(luachon == 2)
+        {
+            xuat_ds_mayin(ds_mayin, n);
+            system("pause");
+        }
+        else if(luachon == 3)
+        {
+            break;
+        }
     }
-    
 }
 
 int main()
 {   
-    
+    Colorlaser ds_mayin[100];
+    int n = 0;
+    menu(ds_mayin, n);
+    return 0;
 }
 
 
