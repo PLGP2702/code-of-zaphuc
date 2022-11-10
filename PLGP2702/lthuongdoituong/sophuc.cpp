@@ -57,3 +57,4 @@ int main()
     cout << "\nThuong cua 2 so phuc: "; c.xuat();
     return 0;
 }
+//plgp2702
