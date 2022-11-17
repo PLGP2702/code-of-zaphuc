@@ -3,7 +3,7 @@
     
 using namespace std;
      
-    class Complex{
+class Complex{
     private:
         float thuc, ao;
     public:
