@@ -1,70 +1,176 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-class MyDate
-{
+class MyDate{
     private:
-    int Ngay;
-    int Thang;
-    int Nam;
+        int ngay;
+        int thang;
+        int nam;
     public:
-    MyDate()
-    {
-        this->Ngay = this->Thang = this->Nam = 0;
-    }
-
-    friend istream &operator>>(istream &is, MyDate &ntn)
-    {
-        cout << "Ngay: "; is >> ntn.Ngay;
-        cout << "Thang: "; is >> ntn.Thang;
-        cout << "Nam: "; is >> ntn.Nam;
-        return is;
-    }
-
-    friend ostream &operator>>(ostream &os, MyDate &ntn)
-    {
-        cout << "Ngay: "; os >> ntn.Ngay;
-        cout << "Thang: "; os >> ntn.Thang;
-        cout << "Nam: "; os >> ntn.Nam;
-        return os;
-    }
-
-    void kiemtra(MyDate &ntn)
-    {
-        if (ntn.Ngay > 0 && ntn.day < 32 && ntn.Thang > 0 && ntn.Thang < 13 && ntn.Nam > 0)
+        MyDate()
         {
-            return true;
+            this->ngay = this->thang = this->nam = 0;
         }
-        else
+        MyDate(int ngay, int thang, int nam)
         {
-            return false;
+            this->ngay = ngay;
+            this->thang = thang;
+            this->nam = nam;
         }
-    }
-
-    void tang(MyDate %ntn)
-    {
-        int n;
-        cout << "Nhap ngay can tang: "; cin >> n;
-        while (n > 0)
+        friend istream &operator>>(istream &is, MyDate &md){
+            cout<<"Day: "; is>>md.ngay;
+            cout<<"Month: "; is>>md.thang;
+            cout<<"Year: "; is>>md.nam;
+            return is;
+        }
+        friend ostream &operator<<(ostream &os, MyDate &md){
+            cout<<"Day: "<<md.ngay;
+            cout<<"Month: "<<md.thang;
+            cout<<"Year: "<<md.nam;
+            return os;
+        }
+        int check(MyDate &md)
         {
-            Ngay+=n;
-            if(day > 31)
-            {
-                day -= 30;
-                Thang++;
+            if(md.ngay>0 && md.ngay<32 && md.thang>0 && md.nam<13 && md.nam>0){
+                return true;
             }
-            else if(Thang > 12)
-            {
-                Thang -= 11;
-                Nam++;
+            else{
+                return false;
             }
-        }       
-    }
-    
-    MyDate operator = (const MyDate &ntn)
-    {
-        Ngay = ntn.Ngay;
-        Thang = ntn.Thang;
-        Nam = ntn.Nam;
-    }
+        }
+
+        void upanddown(MyDate &md)
+        {
+            int n;
+            cout<<"Nhap so ngay can tang: "; cin>>n;
+            while(n>0){
+                ngay+=n;
+                if(ngay>31)
+                {
+                    ngay-=30;
+                    thang++;
+                }
+                else if(thang>12)
+                {
+                    thang-=11;
+                    nam++;
+                }
+            }
+        }
+        MyDate operator=(const MyDate &md)
+        {
+            ngay=md.ngay;
+            thang=md.thang;
+            nam=md.nam;
+        }
+        bool operator>(const MyDate &md)
+        {
+            if(this->ngay>md.ngay && this->thang>md.thang && this->nam>md.nam){
+                return true;
+            }
+            else if(this->ngay>md.ngay && this->thang<md.thang && this->nam>md.nam){
+                return true;
+            }
+            else if(this->ngay<md.ngay && this->thang<md.thang && this->nam>md.nam){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        bool operator>=(const MyDate &md)
+        {
+            if(this->ngay>=md.ngay && this->thang>=md.thang && this->nam>=md.nam){
+                return true;
+            }
+            else if(this->ngay>=md.ngay && this->thang<=md.thang && this->nam>=md.nam){
+                return true;
+            }
+            else if(this->ngay<=md.ngay && this->thang<=md.thang && this->nam>=md.nam){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        bool operator<(const MyDate &md)
+        {
+            if(this->ngay<md.ngay && this->thang<md.thang && this->nam<md.nam){
+                return true;
+            }
+            else if(this->ngay<md.ngay && this->thang>md.thang && this->nam<md.nam){
+                return true;
+            }
+            else if(this->ngay>md.ngay && this->thang>md.thang && this->nam<md.nam){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        bool operator<=(const MyDate &md)
+        {
+            if(this->ngay<=md.ngay && this->thang<=md.thang && this->nam<=md.nam){
+                return true;
+            }
+            else if(this->ngay<=md.ngay && this->thang>=md.thang && this->nam<=md.nam){
+                return true;
+            }
+            else if(this->ngay>=md.ngay && this->thang>=md.thang && this->nam<=md.nam){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        /// @brief 
+        /// @param md 
+        /// @return 
+        bool &operator==(const MyDate &md){
+            if(this->ngay==md.ngay && this->thang==md.thang && this->nam==md.nam){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        /// @brief 
+        /// @param md 
+        /// @return 
+        bool &operator==(const MyDate &md){
+            if(this->ngay!=md.ngay && this->thang!=md.thang && this->nam!=md.nam){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        int getter_year(){
+            return nam;
+        }
 };
+
+void swap(MyDate arr[], int n){
+    for(int i=0; i<n; i++){
+        for(int j=i+1; j<i; j++){
+            if(arr[i].getter_year()>arr[j].getter_year()){
+                int tmp=arr[i].getter_year();
+                arr[i].getter_year()==arr[j].getter_year();
+                arr[i].getter_year()==tmp;
+            }
+        }
+    }
+    for(int i=0; i<n; i++){
+        cin>>arr[i];
+    }
+}
+
+int main(){
+    int n;
+    cout<<"Nhap vao phan tu mang: "; cin>>n;
+    MyDate*arr=new MyDate[n];
+    for(int i=0; i<n; i++){
+        cin>>arr[i];
+    }
+    swap(arr, n);
+}

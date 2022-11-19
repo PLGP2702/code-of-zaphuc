@@ -25,32 +25,18 @@ class Nguoi
             this->HoDem = this->NgaySinh = this->Ten ="";
         }
 
-        friend istream &operator>>(istream &is, Nguoi &obj)
+        void Nhap()
         {
-            cout <<"\nNhap HoDem: "; fflush(stdin); getline(is, obj.HoDem);
-            cout <<"\nNhap NgaySinh: "; fflush(stdin); getline(is, obj.NgaySinh);
-            cout <<"\nNhap Ten: "; fflush(stdin); getline(is, obj.Ten);
-            return is;
+            cout << "\nNhap HoDem: "; fflush(stdin); getline(cin, HoDem);
+            cout << "\nNhap Ngaysinh: "; fflush(stdin); getline(cin, NgaySinh);
+            cout << "\nNhap Ten: "; fflush(stdin); getline(cin, Ten);
         }
 
-        friend ostream &operator<<(ostream &os, Nguoi &obj)
+        void Xuat()
         {
-            os <<"Ho dem: " << obj.HoDem;
-            os <<"Ngay sinh: " << obj.NgaySinh;
-            os <<"Ten: " << obj.Ten;
-            return os;
-        }
-        
-        bool operator>(Nguoi &obj)
-        {
-            if(this->Ten > obj.Ten && this->HoDem > obj.HoDem)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            cout << "\nHoDem: " << HoDem;
+            cout << "\nNgaySinh: " << NgaySinh;
+            cout << "\nTen: " << Ten;
         }
 };
 
@@ -76,19 +62,19 @@ class SinhVien : public Nguoi
         {
            this->Dtb = this->Msv = "";
         }
-
-        friend istream &operator<<(istream &is, SinhVien &student)
+        
+        void Nhap()
         {
-            cout <<"\nNhap msv: "; fflush(stdin); getline(is, student.Msv);
-            cout <<"\nNhap dtb: "; fflush(stdin); getline(is, student.Dtb);
-            return is;
+            Nguoi::Nhap();
+            cout << "\nNhap Msv: "; fflush(stdin); getline(cin, Msv)
+            cout << "\nNhap Dtb: "; fflusj(stdin); getline(cin, Dtb);
         }
 
-        friend ostream &operator>>(ostream &os, SinhVien &student)
+        void Xuat()
         {
-            os <<"\nmsv: " << student.Msv;
-            os <<"\ndtb: " << student.Dtb;
-            return os;
+            Nguoi::Xuat();
+            cout << "\nMsv: " << Msv;
+            cout << "\nDtb: " << Dtb;
         }
 
         bool operator>(SinhVien &student)
@@ -104,7 +90,23 @@ class SinhVien : public Nguoi
         }
 };
 
+void swap()
+{
+    for ()
+    {
+        for ()
+        {
+            if()
+            {
+                    
+            }
+        }
+        
+    }
+    
+}
+
 int main()
 {
-
+    
 }
