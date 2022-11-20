@@ -3,7 +3,7 @@ using namespace std;
 
 //---break
 //---continue
-//---
+//---while
 
 int main()
 {
@@ -90,6 +90,7 @@ int main()
     cout << s << endl;
     */
     //-----------tổng bình phương -----------------
+    /*
     int n;
     cout << "nhap n: ";
     cin >> n ;
@@ -99,4 +100,45 @@ int main()
        S += i * i;
     }
     cout << S << endl;
+    */
+//while
+    /*
+    int i = 0;
+    while(i < 100){
+        cout << i << endl;
+        i += 2;
+    }
+    cout << "Gia tri cua i sau khi ket thuc vong lap while: " << i << endl;
+    */
+    /*
+    int i = 0;
+    while (i < 10)
+    {
+        cout << i << endl;
+        if(i == 5) break;
+        ++i;
+    }
+    */
+    /*
+    int n;
+    cout << "Nhap n: ";
+    cin >> n;
+    int cnt = 0;
+    while (n != 0)
+    {
+        ++cnt;
+        n /= 10;
+    }
+    cout << cnt << endl;
+    */
+    int n;
+    cin >> n;
+    int sum = 0;
+    while (n != 0)
+    {
+        sum += n % 10;
+        n /= 10;
+    }
+    cout << sum << endl;
+    return 0;
 }
