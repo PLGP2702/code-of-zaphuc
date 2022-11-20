@@ -291,7 +291,7 @@ int main(){
         int delta = b * b - 4 * a * c;
         if(delta < 0){
             cout <<"No\n";
-        }
+        } 
         else if(delta == 0){
         cout << fixed << setprecision(2) << (float)-b/(2 * a);
         }
