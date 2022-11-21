@@ -131,6 +131,7 @@ int main()
     }
     cout << cnt << endl;
     */
+    /*
     int n;
     cin >> n;
     int sum = 0;
@@ -140,5 +141,29 @@ int main()
         n /= 10;
     }
     cout << sum << endl;
+    */
+//do-while
+    /*
+    int i = 0;
+    do
+    {
+        cout << i << "\n";
+        i++;
+    } while (i <= 20);
+    */
+    /*
+    int i = 0;
+    do
+    {
+        cout << i << endl;
+        --i;
+    } while (i > -10 && i < 0);
+    */
+    int n = 0;
+    do
+    {
+        cout << n << endl;
+        ++n;
+    } while (n <= 5);
     return 0;
 }
