@@ -102,14 +102,13 @@ int main()
     cout << S << endl;
     */
 //while
-    /*
+    
     int i = 0;
     while(i < 100){
         cout << i << endl;
         i += 2;
     }
     cout << "Gia tri cua i sau khi ket thuc vong lap while: " << i << endl;
-    */
     /*
     int i = 0;
     while (i < 10)
@@ -159,12 +158,13 @@ int main()
         --i;
     } while (i > -10 && i < 0);
     */
-    int n = 0;
-    do
-    {
-        cout << n << endl;
-        ++n;
-    } while (n <= 5);
+    // int n = 0;
+    // do
+    // {
+    //     cout << n << endl;
+    //     ++n;
+    // } while (n <= 5);
+    
     return 0;
 }
 //plgp2702

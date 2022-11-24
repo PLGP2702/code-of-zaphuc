@@ -46,67 +46,101 @@ class SinhVien : public Nguoi
         string Msv;
         float Dtb;
     public:
-        SinhVien()
-        {
-            this->Msv = "";
-            this->Dtb = 0;
-        }
+        string getlineMsv();
+        float getlineDtb();
+        void Nhap();
+        void Xuat();
+        // SinhVien()
+        // {
+        //     this->Msv = "";
+        //     this->Dtb = 0;
+        // }
 
-        SinhVien(string Msv, float Dtb)
-        {
-            this->Msv = Msv;
-            this->Dtb = Dtb;
-        }
+        // SinhVien(string Msv, float Dtb)
+        // {
+        //     this->Msv = Msv;
+        //     this->Dtb = Dtb;
+        // }
 
-        ~SinhVien()
-        {
-           this->Dtb = this->Msv = "";
-        }
+        // ~SinhVien()
+        // {
+        //    this->Dtb = this->Msv = "";
+        // }
         
-        void Nhap()
-        {
-            Nguoi::Nhap();
-            cout << "\nNhap Msv: "; fflush(stdin); getline(cin, Msv)
-            cout << "\nNhap Dtb: "; fflusj(stdin); getline(cin, Dtb);
-        }
+        // void Nhap()
+        // {
+        //     Nguoi::Nhap();
+        //     cout << "\nNhap Msv: "; fflush(stdin); getline(cin, Msv)
+        //     cout << "\nNhap Dtb: "; fflusj(stdin); getline(cin, Dtb);
+        // }
 
-        void Xuat()
-        {
-            Nguoi::Xuat();
-            cout << "\nMsv: " << Msv;
-            cout << "\nDtb: " << Dtb;
-        }
+        // void Xuat()
+        // {
+        //     Nguoi::Xuat();
+        //     cout << "\nMsv: " << Msv;
+        //     cout << "\nDtb: " << Dtb;
+        // }
 
-        bool operator>(SinhVien &student)
-        {
-            if(this->Msv > student.Msv && this->Dtb > student.Dtb)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
+        // bool operator>(SinhVien &student)
+        // {
+        //     if(this->Msv > student.Msv && this->Dtb > student.Dtb)
+        //     {
+        //         return true;
+        //     }
+        //     else
+        //     {
+        //         return false;
+        //     }
+        // }
 };
 
-void swap()
+string SinhVien::getlineMsv()
 {
-    for ()
-    {
-        for ()
-        {
-            if()
-            {
-                    
-            }
-        }
-        
-    }
-    
+    return Msv;
+}
+
+float SinhVien::getlineDtb()
+{
+    return Dtb;
+}
+
+void SinhVien::Nhap()
+{
+    Nguoi::Nhap();
+    cout << "Ma sinh vien: ";
+    getline(cin, Msv);
+    cout << "Nhap diem trung binh: ";
+    cin >> Dtb;
+}
+
+void Sinhvien::Xuat()
+{
+    Nguoi::Xuat();
+    cout << "-=-" << Msv << "===" << Dtb;
 }
 
 int main()
 {
-    
+    int n, i , j;
+    Sinhvien sv[200];
+    cout << "Nhap so luong sinh vien: ";
+    cin >> n;
+    for(i = 0; i < n; i++)
+    {
+        sv[i].Nhap();
+    }
+    for(i = 0; i < n; i++)
+    {
+        sv[i].Xuat();
+        cout << endl;
+    }
+    for(i = 0; i < 0; i ++)
+    {
+        for(j = i + 1; j < n; j++)
+        {
+            temp = sv[i];
+            sv[i] = sv[j];
+            sv[j] = temp;
+        }
+    }
 }
