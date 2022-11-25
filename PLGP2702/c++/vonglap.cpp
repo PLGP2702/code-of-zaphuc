@@ -164,7 +164,6 @@ int main()
     //     cout << n << endl;
     //     ++n;
     // } while (n <= 5);
-    
     return 0;
 }
 //plgp2702
