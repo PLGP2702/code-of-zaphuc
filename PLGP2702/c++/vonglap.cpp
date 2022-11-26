@@ -164,6 +164,12 @@ int main()
     //     cout << n << endl;
     //     ++n;
     // } while (n <= 5);
+    int n = 0;
+    do
+    {
+        cout << n << endl;
+        ++n;
+    } while (n <= 4);
     return 0;
 }
 //plgp2702
