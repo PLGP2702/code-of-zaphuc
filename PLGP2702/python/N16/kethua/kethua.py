@@ -11,7 +11,7 @@ class Circle(Shape):
         self.radius = radius
     def __str__(self):
         return 'Circle color = {}, radius = {}'.format(self.color, self.radius)
-    def __repr__(self):
+    def __repr__(self):                        
         return 'Circle (' + self.color + str(self.radius) + ')'
     def get_area(self):
         import math
@@ -22,7 +22,7 @@ class Rectangle(Shape):
         self.length = length
         self.width = width
     def __str__(self):
-         # return 'Rectangle color = {}, '
+        return 'Rectangle color = {}, '
     def __repr__(self):
         return 'Rectangle (' + self.color + str(self.length) + str(self.width) + ')'
     def get_area(self):
@@ -31,9 +31,10 @@ class Square(Rectangle):
     def __init__(self, length):
         super().__init__(length, length)
     def __str__(self):
-        # return 
-    def __repr(self):
+        return 
+    def __repr__(self):
         return 'Square (' + self.color + ',' + str(self.length) + ')'        
+
 s = Rectangle(5, 8)
 repr(s)
 s.get_area()
