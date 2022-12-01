@@ -3,7 +3,8 @@
     
 using namespace std;
      
-class Complex{
+class Complex
+{
     private:
         float thuc, ao;
     public:
@@ -17,7 +18,7 @@ class Complex{
         thuc = a;
         ao = b;
     }
-    
+
         void nhap() {
             cout << "Nhap phan thuc: "; cin >> thuc;
             cout << "Nhap phan ao: "; cin >> ao;    
@@ -66,22 +67,20 @@ class Complex{
         // void chia(Sophuc a, Sophuc b) {
         //     thuc = (a.thuc * b.thuc + a.ao * b.ao) / (b.ao * b.ao + b.thuc * b.thuc);
         //     ao = (a.ao * b.thuc - a.thuc * b.ao) / (b.thuc * b.thuc + b.ao * b.ao);
-        // };
-    };
-    
-    int main()
-    {
-        Complex a,b,c;
-        a.nhap();
-        b.nhap();
-        c.cong(a,b);
-        cout << "Tong cua 2 so phuc: "; c.xuat();
-        c.tru(a,b);
-        cout << "\nHieu cua 2 so phuc: "; c.xuat();
-        c.nhan(a,b);
-        cout << "\nTich cua 2 so phuc: "; c.xuat();
-        // c.chia(a,b);
-        // cout << "\nThuong cua 2 so phuc: "; c.xuat();
-        return 0;
-    }
+        // };   
+
+{
+    Complex a,b,c;
+    a.nhap();
+    b.nhap();
+    c.cong(a,b);
+    cout << "Tong cua 2 so phuc: "; c.xuat();
+    c.tru(a,b);
+    cout << "\nHieu cua 2 so phuc: "; c.xuat();
+    c.nhan(a,b);
+    cout << "\nTich cua 2 so phuc: "; c.xuat();
+    // c.chia(a,b);
+    // cout << "\nThuong cua 2 so phuc: "; c.xuat();
+    return 0;
+}
     
