@@ -22,6 +22,7 @@ class Complex
     //
     void nhap()
     {
+        cout << "==============";
         cout << "\nNhap phan thuc: "; cin >> thuc;
         cout << "\nNhap phan ao: "; cin >> ao;
     };
@@ -104,5 +105,6 @@ int main()
     c.Chia(a, b);
     cout << "\n========THUONG========";
     cout << "\nThuong cua hai so thuc: "; c.xuat();
+    cout << "\n========END========";
     return 0;
 };
