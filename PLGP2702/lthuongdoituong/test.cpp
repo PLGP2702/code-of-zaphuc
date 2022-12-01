@@ -93,12 +93,16 @@ int main()
     a.nhap();
     b.nhap();
     c.Cong(a, b);
+    cout << "========TONG========";
     cout << "\nTong cua hai so thuc: "; c.xuat();
     c.Tru(a, b);
+    cout << "\n========HIEU========";
     cout << "\nHieu cua hai so thuc: "; c.xuat();
     c.Nhan(a, b);
+    cout << "\n========TICH========";
     cout << "\nTich cua hai so thuc: "; c.xuat();
     c.Chia(a, b);
+    cout << "\n========THUONG========";
     cout << "\nThuong cua hai so thuc: "; c.xuat();
     return 0;
 };
