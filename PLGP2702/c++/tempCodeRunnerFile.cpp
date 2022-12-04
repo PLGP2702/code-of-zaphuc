@@ -1,1 +1,1 @@
-int n = 100;
+cout << Tong(10) << endl;
