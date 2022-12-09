@@ -1,5 +1,6 @@
-#include <iostream>
-#include <math.h>
+#include <bits/stdc++.h>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -114,7 +115,7 @@ int main(){
     default:
         printf("du lieu khong hop le!");
     }
-*/        
-    return 0;  
+*/   
+    return 0;
 }
 

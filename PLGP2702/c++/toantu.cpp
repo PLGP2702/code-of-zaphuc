@@ -81,7 +81,7 @@ using namespace std;
 
 int main()
 {
-    int a, b ,c;
+    int a, b ,c ,d;
     cout << "\nNhap a: ";
     cin >> a;
     cout << "\nNhap b: ";
@@ -109,8 +109,8 @@ int main()
     cout <<"\na > c : "<< res3 << endl;
     cout << "=========AND, OR, NOT========";
     int res4 = !(a < b);
-    int res5 = !(a == e);
+    int res5 = !(a == d);
     int res6 = (a > b) && (a > d) || (a <= d);
-    cout << res4 << " " << res5 << " " << res6 << endl;
+    cout << "\n" << res4 << "\n" << res5 << "\n" << res6 << endl;
     return 0;
 }
