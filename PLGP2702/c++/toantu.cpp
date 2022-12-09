@@ -1,8 +1,8 @@
-#include <iostream>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-int main(){
+// int main(){
     /* các kiểu dữ liệu-----------------------
     int a = 100; 
     long long b = 200;
@@ -27,14 +27,13 @@ int main(){
     cout << c << endl;
     */
     //--------------------------------- toan tu 
-    
-    int a = 500, b = 200; 
-    int tong = a + b;
-    int hieu = a - b;
-    int tich = a * b;
-    float thuong = (float)a / b;
-    int du = a % b;
-    cout << tong << " " << hieu << " " << tich << " " << thuong << " " << du << endl;
+    // int a = 500, b = 200; 
+    // int tong = a + b;
+    // int hieu = a - b;
+    // int tich = a * b;
+    // float thuong = (float)a / b;
+    // float du = a % b;
+    // cout << tong << " " << hieu << " " << tich << " " << thuong << " " << du << endl;
     //--------------------- tang truoc ++a 101 101, tang sau a++ 101 100
     /*
     int a = 100; 
@@ -71,7 +70,7 @@ int main(){
     // int res6 = (a > b) && (a > e) || (a <= e);
     // cout << res << " "<< res1 << " " << res2 << " " << res3 << " " << res4 << " " << res5 << " " << res6 << endl;
     // return 0;
-}
+// }
 // assignment operator: toan tu gan 
 // toan tu toan hoc: +, -, *, /, %, ++, --
 //toan tu so sanh: >, <, >=, <=, ==, !=
@@ -79,3 +78,39 @@ int main(){
 // and : &&
 // or : ||
 // not : !
+
+int main()
+{
+    int a, b ,c;
+    cout << "\nNhap a: ";
+    cin >> a;
+    cout << "\nNhap b: ";
+    cin >> b;
+    cout << "\nNhap c: ";
+    cin >> c;
+    cout << "\nNhap d: ";
+    cin >> d;
+    int tong = a + b;
+    int hieu = a - b;
+    int tich = a * c;
+    float thuong = b / c;
+    float Du = (float)a / b;
+    cout << "========DAP AN========";
+    cout << "\na + b = " << tong << endl;
+    cout << "\na - b = " << hieu << endl;
+    cout << "\na * c = " << tich << endl;
+    cout << "\nb / c = " << thuong << endl;
+    cout << "\na / b = " << Du << endl;
+    cout << "========SO SANH========";
+    bool res0 = a != b, res1 = a == b, res2 = a > b, res3 = a > c;
+    cout <<"\na != b : "<< res0 << endl;
+    cout <<"\na == b : "<< res1 << endl;
+    cout <<"\na > b : "<< res2 << endl;
+    cout <<"\na > c : "<< res3 << endl;
+    cout << "=========AND, OR, NOT========";
+    int res4 = !(a < b);
+    int res5 = !(a == e);
+    int res6 = (a > b) && (a > d) || (a <= d);
+    cout << res4 << " " << res5 << " " << res6 << endl;
+    return 0;
+}

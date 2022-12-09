@@ -1,1 +1,2 @@
-cout << Tong(10) << endl;
+
+    cout << "\nNhap a: ";
