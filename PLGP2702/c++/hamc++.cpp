@@ -113,8 +113,8 @@ int main()
     //Tang(a);
     //cout << a << endl;
 
-    //int a = 10;
-    //cout << Tong(a) << endl;
+    int a = 10;
+    cout << Tong(a) << endl;
 
     //cout << Tong(10) << endl;
 
@@ -140,7 +140,7 @@ int main()
     // Tang1(a);
     // cout << a << endl;
 
-    long long n = 100.1, m = 200.2;
-    cout << Tong3(n ,m) << endl;
+    // long long n = 100.1, m = 200.2;
+    // cout << Tong3(n ,m) << endl;
     return 0;
 }

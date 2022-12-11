@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 //---break
@@ -103,12 +103,12 @@ int main()
     */
 //while
     
-    int i = 0;
-    while(i < 100){
-        cout << i << endl;
-        i += 2;
-    }
-    cout << "Gia tri cua i sau khi ket thuc vong lap while: " << i << endl;
+    // int i = 0;
+    // while(i < 100){
+    //     cout << i << endl;
+    //     i += 2;
+    // }
+    // cout << "Gia tri cua i sau khi ket thuc vong lap while: " << i << endl;
     /*
     int i = 0;
     while (i < 10)
@@ -164,13 +164,13 @@ int main()
     //     cout << n << endl;
     //     ++n;
     // } while (n <= 5);
-    int n = 0;
-    do
-    {
-        cout << n << endl;
-        ++n;
-    } while (n <= 4);
-    return 0;
+    // int n = 0;
+    // do
+    // {
+    //     cout << n << endl;
+    //     ++n;
+    // } while (n <= 4);
+    
 }
 //plgp2702
 
