@@ -113,8 +113,8 @@ int main()
     //Tang(a);
     //cout << a << endl;
 
-    int a = 10;
-    cout << Tong(a) << endl;
+    // int a = 10;
+    // cout << Tong(a) << endl;
 
     //cout << Tong(10) << endl;
 

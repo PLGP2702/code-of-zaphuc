@@ -19,9 +19,31 @@ void Tang(int n)
     n += 100;
 }
 
-void Tong(int n)
+int Tong(int n)
 {   
     return n * (n + 1) / 2;
+}
+
+float Tong1(int n)
+{
+    float res  = 0; 
+    for (int i = 0; i <= n; i++)
+    {
+        res += 1.0 / i;
+    }
+    return res;
+}
+
+bool Nguyento(int n)
+{
+    for (int i = 0; i <= sqrt(n); i++)
+    {
+        if(n % i ==0)
+        {
+            return false;
+        }
+    }
+    return  n > 1;
 }
 
 int main()
@@ -40,7 +62,12 @@ int main()
     // Tang(a);
     // cout << a << endl;
 
-    int n;
-    cout << Tong(a) << endl;
+    for (int i = 1; i <= 100; i++)
+    {
+        if(Nguyento(i))
+        {
+            cout << i << endl;
+        }
+    }
     return 0;
 }
