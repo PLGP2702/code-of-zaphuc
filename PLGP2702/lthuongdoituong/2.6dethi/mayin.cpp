@@ -9,7 +9,7 @@ class Printer
     public:
     Printer()
     {
-        this->Name="";
+        this->Name=""
         this->Soluong = 0;
     }
     void nhapkho()
