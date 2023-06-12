@@ -112,20 +112,31 @@ int main(){
         cout << 0 << endl;
     }
     */
-    /* //kiem tra nam nhuan--------------------------------
+     //kiem tra nam nhuan--------------------------------
+    /*
     int n;
-    cin >> n;
-    if(n <= 0){
-        cout << " INVALID\n";
-    }
-    else{
-        if((n % 400 == 0) || ((n % 4 == 0) && (n % 100 != 0))){
-            cout << "Yes\n";
+    bool isValid = false;
+    while(!isValid) {
+        cout << "Enter a year: ";
+        cin >> n;
+        if(n <= 0)
+        {
+            cout << "INVALID\n";
         }
-        else cout << "NO\n";
+        else {
+            isValid = true;
+            if((n % 400 == 0) || ((n % 4 == 0) && (n % 100 != 0)))
+            {
+                cout << "Yes\n";
+            }
+            else {
+                cout << "NO\n";
+            }
+        }
     }
     */
-    /* //in ra so ngay cua thang----------------------------
+     //in ra so ngay cua thang----------------------------
+    /*
     int t, n; 
     cin >> t >> n;
     if(t <= 0 || t > 12 || n <= 0){
@@ -148,6 +159,32 @@ int main(){
         }
     }
     */
+    int t, n;
+    cin >> t >> n; 
+    if(t <= 1 || t > 12 || n <= 0)
+    {
+        cout << "INVAlID\n";
+    }
+    else{
+        if(t == 1 || t == 3 || t == 5 || t == 7 || t == 8 || t == 10 || t == 12)
+        {
+        /* code */
+            cout << "thang co 31 ngay\n";
+        }
+        if(t == 4 || t == 6 || t == 9 || t == 11)
+        {
+            cout << "thang co 30 ngay\n";
+        }
+        else{
+            if((n % 400 == 0) || ((n % 4 == 0) && (n % 100 != 0)))
+            {
+                cout << "29";
+            }
+            else{
+                cout << "28";
+            }
+        }
+    }
     /* //kiem tra chu in hoa,thuong-------------------------------
     // a - z : 97 - 122
     // A - Z : 65 - 90
@@ -161,6 +198,20 @@ int main(){
         cout << "no";
     }
     */
+   char c;
+   cin >> c; 
+   cout << (int)c << endl;
+   if(c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z' )
+   {
+        cout << "Yes";
+   }
+   else{
+    cout << "No";
+   }
+   char c;
+   cin >> c;
+   cout << (int) c << endl;
+   if(c >= 'a' && c <= 'z')
     /* //kiem tra chu so-------------------------------------------
     char c; cin >> c;
     cout << (int)c << endl;
@@ -274,32 +325,33 @@ int main(){
     cout << "Tuan: "<< tuan << endl;
     cout << "Thang: "<< ngay << endl;
     */
-    int a, b, c;
-    cin >> a >> b >> c;
-    if(a == 0){
-        if(b == 0 && c == 0){
-            cout <<"INF";
-        }
-        else if(b == 0 && c != 0){
-            cout <<"No";
-        }
-        else if(b != 0){
-            cout << fixed << setprecision(2) << (float)- c / b;
-        }
-    }
-    else{
-        int delta = b * b - 4 * a * c;
-        if(delta < 0){
-            cout <<"No\n";
-        } 
-        else if(delta == 0){
-        cout << fixed << setprecision(2) << (float)-b/(2 * a);
-        }
-        else{
-            float x1 = (-b + sqrt(delta)) / (2 * a);
-            float x2 = (-b - sqrt(delta)) / (2 * a);
-            cout << fixed << setprecision(2) << x1 << " " << x2 << endl;
-        }    
-    }
+    // int a, b, c;
+    // cin >> a >> b >> c;
+    // if(a == 0){
+    //     if(b == 0 && c == 0){
+    //         cout <<"INF";
+    //     }
+    //     else if(b == 0 && c != 0){
+    //         cout <<"No";
+    //     }
+    //     else if(b != 0){
+    //         cout << fixed << setprecision(2) << (float)- c / b;
+    //     }
+    // }
+    // else{
+    //     int delta = b * b - 4 * a * c;
+    //     if(delta < 0){
+    //         cout <<"No\n";
+    //     } 
+    //     else if(delta == 0){
+    //     cout << fixed << setprecision(2) << (float)-b/(2 * a);
+    //     }
+    //     else{
+    //         float x1 = (-b + sqrt(delta)) / (2 * a);
+    //         float x2 = (-b - sqrt(delta)) / (2 * a);
+    //         cout << fixed << setprecision(2) << x1 << " " << x2 << endl;
+    //     }    
+    // }
+
     return 0;
 }

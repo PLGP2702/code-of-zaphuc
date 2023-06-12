@@ -5,6 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "java.javaa.oop.Main"
+        },
+        {
             "name": "(gdb) Attach",
             "type": "cppdbg",
             "request": "attach",
@@ -24,7 +30,6 @@
                 }
             ]
         },
-        
         {
             "name": "(gdb) Launch",
             "type": "cppdbg",
@@ -50,7 +55,5 @@
                 }
             ]
         }
-        
-
     ]
 }

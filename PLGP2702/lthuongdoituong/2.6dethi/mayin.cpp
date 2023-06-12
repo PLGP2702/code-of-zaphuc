@@ -82,7 +82,7 @@ void xuat_ds_mayin(Colorlaser ds_mayin[], int n)
         cout << "\nThong tin may in thu: " << dem++;
         ds_mayin[i].xuatkho();
     }
-    
+
 }
 
 void menu(Colorlaser ds_mayin[], int n)
